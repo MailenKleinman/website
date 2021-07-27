@@ -368,8 +368,8 @@
               } else {
                 // Feedback to the user
                 console.log(response);
-                submitBtn.removeClass('wait').html('Error').addClass('error');
-                feedbackEl.addClass('Message sent').html('Thank for your message! I will contact you soon').fadeIn(200);
+                submitBtn.removeClass('wait').html('Message sent').addClass('error');
+                feedbackEl.addClass('error').html('Thanks for your message! I will contact you soon').fadeIn(200);
                 setTimeout(function() {
                   submitBtn.html(submitBtnText).removeClass('error').prop('disabled', false);
                   feedbackEl.fadeOut(200).removeClass('error').html('');
